@@ -1,97 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mi primera web ya editada causa</title>
-    <style>
-        table, th, td {
-            border: 1px solid black;
-        }
-    </style>
+    <title>Blog 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <table style="width: 500px;">
-        <thead>
-            <tr>
-                <th>poducto</th>
-                <th>precio</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>comida</td>
-                <td>gratis</td>
-            </tr>
-            <tr>
-                <td>comida mediana</td>
-                <td>s/10.00</td>
-            </tr>
-            <tr>
-                <td>comida muy grande</td>
-                <td>s/20.00</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <td></td>
-            <td>Total: s/30.00</td>
-        </tfoot>
-    </table>
-    <!--esto es una lista desordenada-->
-    <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-        <li>Item 4</li>
-        <li>Item 5</li>
-    </ul>
-    <!--esto es una lista ordenada-->
-    <ol>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-        <li>Item 4</li>
-        <li>Item 5</li>
-        <li>
-            <ol>
-                <li style="list-style-type: upper-roman;">Item 1</li>
-                <li style="list-style-type: upper-roman;">Item 2</li>
-                <li style="list-style-type: upper-roman;">Item 3</li>
-                <li style="list-style-type: upper-roman;">Item 4</li>
-                <li style="list-style-type: upper-roman;">Item 5</li>
-            </ol>
-        </li>
-    </ol>
-    <form action="/fomulario" method="get">
-        <label for="nombre completo">Nombre completo</label>
-        <input value="esto asi" id="nombre completo" name="nombre completo" placeholder="nombre completo"/>
-        <br>
-        <label for="apellidos">Apellidos</label>
-        <input value="y esto asa" id="apellidos" name="apellidos" placeholder="apellidos"/>
-        <br>
-        <label for="comentario">comentarios</label>
-        <br>
-        <textarea cols="50" rows="10" id="comentario" placeholder="inserte aqui comentarios o texto" 
-        name="comentario">esto es un valor por defecto</textarea>
-        <br>
-        <button type="button">tipo boton</button>
-        <button type="submit">tipo boton submit</button>
-        <button type="reset">tipo boton reset</button>
-    </form>
-    <h1>mi primer heading</h1>
-    <h2>mi segundo heading</h2>
-    <h3>mi tercer heading</h3>
-    <h4>mi cuarto heading</h4>
-    <h5>mi quinto heading</h5>
-    <h6>lo que sea 2008</h6>
-    <p>mi primer parrafo se ve aqui</p>
-    <p>mi segundo parrafo se ve aqui tmb</p>
-    <hr>
-    <h2>el subtitulo que le caiga a esto</h2>
-    <p>aqui lo que va abajo del subtitulo y asi <spam>aqui se coloco un spam
-    </spam>para probar esto <br>y aqui colocamos un br para que el texto no 
-    sea tan largo</p>
-    <!-- este texto no va a salir en la prueba -->
-     <a target="_blank" href="https://www.google.com">ir a google</a>
-     <br>
-     <img src="img/bart rotten.png" heigth="600"/>
+    <header id="titulo">
+        <h1> THE SEX PISTOLS</h1> 
+    </header>
+    <section class="container">
+        <article class="post">
+            <h2>Inicios de la Banda</h2>
+            <p>Sex Pistols fue una banda de punk formada en Londres en 1975, 
+                considerada por algunas fuentes la responsable de haber iniciado el movimiento punk en el Reino Unido
+                y de inspirar a muchos músicos de punk rock, heavy metal y el rock contemporáneo en general
+            </p>
+            <img src="img/bart rotten.png" width="400"/>
+            <p>Bart Rotten, inspirado en Jhonny Rotten en un episodio de los Simpsons</p>
+        </article>
+        <article class="post">
+            <h2>Decadencia de la Banda</h2>
+            <p>En enero de 1978, al final de una turbulenta gira por Estados Unidos, 
+                Rotten dejó la banda y anunció su disolución. En los meses siguientes, 
+                los tres miembros restantes de la banda grabaron una serie de canciones para la película sobre la versión de McLaren de la historia de la banda, 
+                The Great Rock 'n' Roll Swindle. Vicious murió de una sobredosis de heroína en febrero de 1979. En 1996, Rotten, Jones, Cook y Matlock se reunieron para el Filthy Lucre Tour;
+                desde 2002, se han vuelto a reunir para giras y conciertos en varias ocasiones. El 24 de febrero de 2006, Sex Pistols fueron incluidos en el Salón de la Fama del Rock and Roll, 
+                aunque se negaron a asistir a la ceremonia, llamando al museo «una mancha de pis».
+            </p>
+            <img src="img/bart rotten 2.png" width="400"/>
+            <p>Representa los conflictos que surgío entre Vicious Y Rotten</p>
+        </article>
+        <article class="post">
+            <h2>Inspiraciones similares</h2>
+            <p>De igual manera en otro episodio podemos ver a la banda Nirvana 
+                representada con Homero como kurt cobain donde se logra ver 
+                la vida que llevaba el vocalista.
+            </p>
+            <img src="img/sadgasm.jpg" width="400"/>
+            <p>Sadgasm que quiere decir algo como "triste-gasmo"</p>
+        </article>
+    </section>
+    <footer>
+        <section>
+            <a href="#titulo">Ir a inicio</a>
+            <a href="mailto:maud280699@outlook.com">Escribeme aqui</a>
+        </section>
+        <p>copyright 2024</p>
+    </footer>
 </body>
-</html> 
+</html>
